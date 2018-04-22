@@ -1,5 +1,5 @@
 
-let express = requie('express');
+let express = require('express');
 let app = express();
 
 // Home Entry
@@ -16,7 +16,7 @@ app.get('/papas', (req, res) => {
 app.get('/papas/inventario', (req, res) => {
     res.json(
         { 
-            "inventario": 20, 
+            "cantidad": 20, 
             "proximaDisponibilad": '',
             'precio': 1600
         }
